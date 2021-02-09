@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="#87B3AF"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#10534D"
+        android:gravity="center_vertical"
+        app:layout_collapseMode="pin"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:theme="@style/MyToolbarTheme"
+        app:title="Profile"
+        app:titleTextColor="#FBFBFB"/>
+
+    <androidx.core.widget.NestedScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="611dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/background"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                app:layout_anchor="@+id/app_bar"
+                app:layout_anchorGravity="center">
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:id="@+id/image"
+                    android:layout_width="119dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="16dp"
+                    android:src="@drawable/logo_transparent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.896" />
+
+                <TextView
+                    android:id="@+id/email"
+                    style="@style/profileDetailsMiniText"
+                    android:layout_width="242dp"
+                    android:layout_height="47dp"
+                    android:layout_marginRight="10dp"
+                    android:text="maashasalih@gmail.com"
+                    android:textColor="#F3F3F3"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.166"
+                    app:layout_constraintStart_toEndOf="@+id/image"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.869" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+
+                android:background="@color/colorAccent"></View>
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:orientation="vertical"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/savecard"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp">
+
+                            <ImageView
+                                android:id="@+id/orders"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="15dp"
+                                app:srcCompat="@drawable/fav" />
+
+                            <TextView
+                                android:id="@+id/ordertxt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="60dp"
+                                android:layout_marginTop="15dp"
+                                android:text="Favorites"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                android:textColor="@color/titlecolor" />
+
+                            <TextView
+                                android:id="@+id/orderdes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="60dp"
+                                android:layout_marginTop="35dp"
+                                android:text="Check your order status"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textSize="10sp" />
+
+                            <ImageView
+                                android:id="@+id/arrorw1"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="right"
+                                android:layout_marginTop="15dp"
+                                android:layout_marginRight="20dp"
+                                app:srcCompat="@drawable/right_back_24dp" />
+
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/appointmentcard"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+
+                            >
+
+                            <ImageView
+                                android:id="@+id/wishlist"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="15dp"
+                                android:background="#F6F6F6"
+                                app:srcCompat="@drawable/appoi" />
+
+                            <TextView
+                                android:id="@+id/fav"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="60dp"
+                                android:layout_marginTop="15dp"
+                                android:text="My Appointments"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                android:textColor="@color/titlecolor" />
+
+                            <TextView
+                                android:id="@+id/wishdes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="60dp"
+                                android:layout_marginTop="35dp"
+                                android:text="Your most loved houses"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textSize="10sp" />
+
+                            <ImageView
+                                android:id="@+id/arrorw2"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="right"
+                                android:layout_marginTop="15dp"
+                                android:layout_marginRight="20dp"
+                                app:srcCompat="@drawable/right_back_24dp" />
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/reservedcard"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+
+                            >
+
+                            <ImageView
+                                android:id="@+id/reserved"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="15dp"
+                                android:background="#F6F6F6"
+                                app:srcCompat="@drawable/rser" />
+
+                            <TextView
+                                android:id="@+id/reservedtxt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="60dp"
+                                android:layout_marginTop="15dp"
+                                android:text="Reserved Houses"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                android:textColor="@color/titlecolor" />
+
+                            <TextView
+                                android:id="@+id/reserveddes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="60dp"
+                                android:layout_marginTop="35dp"
+                                android:text="Your most loved houses"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textSize="10sp" />
+
+                            <ImageView
+                                android:id="@+id/arw2"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="right"
+                                android:layout_marginTop="15dp"
+                                android:layout_marginRight="20dp"
+                                app:srcCompat="@drawable/right_back_24dp" />
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/profilecard"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp">
+
+                            <ImageView
+                                android:id="@+id/user"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="15dp"
+                                app:srcCompat="@drawable/ic_person_black_24dp" />
+
+                            <TextView
+                                android:id="@+id/profiletxt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="60dp"
+                                android:layout_marginTop="15dp"
+                                android:text="Profile Details"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                android:textColor="@color/titlecolor" />
+
+                            <TextView
+                                android:id="@+id/prodes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="60dp"
+                                android:layout_marginTop="35dp"
+                                android:text="Change your profile details and password"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textSize="10sp" />
+
+                            <ImageView
+                                android:id="@+id/arrorw3"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="right"
+                                android:layout_marginTop="15dp"
+                                android:layout_marginRight="20dp"
+                                app:srcCompat="@drawable/right_back_24dp" />
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/settingcard"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp">
+
+                            <ImageView
+                                android:id="@+id/settings"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="15dp"
+                                app:srcCompat="@drawable/ic_settings_black_24dp" />
+
+                            <TextView
+                                android:id="@+id/settingtxt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="60dp"
+                                android:layout_marginTop="15dp"
+                                android:text="Settings"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                android:textColor="@color/titlecolor" />
+
+                            <TextView
+                                android:id="@+id/aettingdes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="60dp"
+                                android:layout_marginTop="35dp"
+                                android:text="Manage settings"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textSize="10sp" />
+
+                            <ImageView
+                                android:id="@+id/arrorw4"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="right"
+                                android:layout_marginTop="15dp"
+                                android:layout_marginRight="20dp"
+                                app:srcCompat="@drawable/right_back_24dp" />
+
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.core.widget.NestedScrollView>
+
+            <Button
+                android:id="@+id/logout"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+
+                android:background="#009688"
+                android:gravity="center"
+                android:shadowColor="@color/titlecolor"
+                android:text="LOG OUT"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/colorAccent" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

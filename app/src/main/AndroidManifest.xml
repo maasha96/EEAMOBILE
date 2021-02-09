@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.eea.allensellshomes">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:usesCleartextTraffic="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".AdminManagement.AdminActivity.ManageProduct"></activity>
+        <activity android:name=".AdminManagement.AdminActivity.ManageReservations" />
+        <activity android:name=".AdminManagement.AdminActivity.ManageUsers" />
+        <activity android:name=".AdminManagement.AdminActivity.ManageAppointments" />
+        <activity android:name=".AdminManagement.AdminActivity.ManageHouses" />
+        <activity android:name=".Activity.AdminActivity" />
+        <activity android:name=".Activity.AppointmentActivity" />
+        <activity android:name=".Activity.ReservedHouseActivity" />
+        <activity android:name=".Activity.FavoritesActivity" />
+        <activity android:name=".Activity.ProfileActivity" />
+        <activity android:name=".Activity.LoginActivity" />
+        <activity android:name=".Activity.HouseDetailsActivity" />
+        <activity android:name=".Activity.RegisterActivity"/>
+<!--        <activity android:name=".AdminManagement.AdminAdapter.ConfirmAdapter"></activity>-->
+<!--        <activity android:name=".AdminManagement.AdminAdapter.MyProductAdapter" />-->
+<!--        <activity android:name=".AdminManagement.AdminAdapter.PendingAdapter" />-->
+<!--        <activity android:name=".AdminManagement.AdminAdapter.ReservedAdapter" />-->
+<!--        <activity android:name=".AdminManagement.AdminAdapter.TabAdapter" />-->
+<!--        <activity android:name=".AdminManagement.AdminAdapter.ViewAllHousesAdapter" />-->
+<!--        <activity android:name=".AdminManagement.AdminAdapter.UserAdapter" />-->
+<!--        <activity android:name=".Adapter.TabAdapter" />-->
+<!--        <activity android:name=".Adapter.ReservedHouseAdapter" />-->
+<!--        <activity android:name=".Adapter.FavoritesAdapter" />-->
+<!--        <activity android:name=".Adapter.HouseAdapter" />-->
+
+        <activity android:name=".Activity.SplashActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.MainActivity" />
+
+    </application>
+
+</manifest>

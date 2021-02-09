@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_margin="5dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/ru"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""></TextView>
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="200dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center"
+                    android:layout_height="145dp"
+                    android:background="@drawable/logo_transparent">
+                </ImageView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardview3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cardview2">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+
+                        android:weightSum="2">
+
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:divider="?android:dividerHorizontal"
+                            android:orientation="vertical"
+                            android:showDividers="middle">
+
+                            <TextView
+                                android:id="@+id/category"
+                                android:layout_width="match_parent"
+                                android:paddingLeft="6dp"
+                                android:drawablePadding="5dp"
+                                android:layout_height="wrap_content"
+
+
+                                android:paddingTop="10dp"
+                                android:paddingBottom="10dp"
+                                android:text="Single-House"
+                                android:textColor="@color/titlecolor"></TextView>
+
+                            <TextView
+                                android:id="@+id/location"
+                                android:layout_width="match_parent"
+                                android:paddingLeft="6dp"
+                                android:layout_height="wrap_content"
+
+                                android:paddingTop="10dp"
+                                android:paddingBottom="10dp"
+                                android:text="Los Angeles, California"
+                                android:drawablePadding="5dp"
+                                android:textColor="@color/titlecolor"></TextView>
+
+                            <TextView
+                                android:id="@+id/rooms"
+                                android:layout_width="match_parent"
+                                android:paddingLeft="6dp"
+                                android:layout_height="wrap_content"
+
+                                android:paddingTop="10dp"
+                                android:paddingBottom="10dp"
+                                android:drawablePadding="5dp"
+                                android:text="Rooms"
+                                android:textColor="@color/titlecolor"></TextView>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:divider="?android:dividerHorizontal"
+                            android:orientation="vertical"
+                            android:showDividers="middle">
+
+                            <TextView
+                                android:id="@+id/bath"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                android:paddingTop="10dp"
+                                android:drawablePadding="5dp"
+                                android:paddingBottom="10dp"
+                                android:text="Baths"
+                                android:textColor="@color/titlecolor"></TextView>
+
+                            <TextView
+                                android:id="@+id/garages"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                android:paddingTop="10dp"
+                                android:paddingBottom="10dp"
+                                android:drawablePadding="5dp"
+                                android:text="Garage"
+                                android:textColor="@color/titlecolor"></TextView>
+                            <TextView
+                                android:id="@+id/price"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="10dp"
+                                android:paddingBottom="10dp"
+                                android:drawablePadding="5dp"
+
+                                android:text="RS "
+                                android:textColor="@color/titlecolor"></TextView>
+
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:weightSum="2"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/status"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Available"
+                        android:layout_margin="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="5dp">
+
+                    </TextView>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right">
+                    <Button
+                        android:layout_weight="1"
+                        android:id="@+id/remove"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:paddingLeft="5dp"
+                        android:text="Remove"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:background="#00BCD4"
+                        ></Button>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
